@@ -7,6 +7,8 @@ import lombok.*;
 
 import javax.persistence.*;
 import javax.validation.constraints.Min;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Size;
 import java.util.Set;
 
 @Table(name = "user")
@@ -24,5 +26,6 @@ public class User{
     private int id;
 
     @NonNull
+    @Size(min = 2)
     private String username;
 }

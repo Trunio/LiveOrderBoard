@@ -5,6 +5,7 @@ import com.sun.istack.NotNull;
 import lombok.*;
 
 import javax.persistence.*;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.Positive;
 import java.util.Set;
 
@@ -23,11 +24,11 @@ public class Order {
     private int id;
 
     @NonNull
-    @Positive
+    @Min(value = 0L, message = "The value must be positive")
     private int quantity;
 
     @NonNull
-    @Positive
+    @Min(value = 0L, message = "The value must be positive")
     private double price;
 
     @NonNull
