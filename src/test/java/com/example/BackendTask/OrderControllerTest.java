@@ -1,10 +1,9 @@
 package com.example.BackendTask;
 
-import com.example.BackendTask.Controllers.OrderController;
-import com.example.BackendTask.Models.Order;
-import com.example.BackendTask.Models.User;
-import com.example.BackendTask.ModelsDTO.OrderDTO;
-import com.example.BackendTask.Services.Interfaces.OrderService;
+import com.example.BackendTask.controllers.OrderController;
+import com.example.BackendTask.models.Order;
+import com.example.BackendTask.modelsDTO.OrderDTO;
+import com.example.BackendTask.services.OrderService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Test;
 import org.junit.runner.RunWith;

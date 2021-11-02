@@ -7,8 +7,8 @@ import javax.validation.Validation;
 import javax.validation.Validator;
 import javax.validation.ValidatorFactory;
 
-import com.example.BackendTask.Models.Order;
-import com.example.BackendTask.Models.User;
+import com.example.BackendTask.models.Order;
+import com.example.BackendTask.models.User;
 import org.junit.Before;
 import org.junit.Test;
 

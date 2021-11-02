@@ -6,7 +6,7 @@ import javax.validation.ConstraintViolation;
 import javax.validation.Validation;
 import javax.validation.Validator;
 import javax.validation.ValidatorFactory;
-import com.example.BackendTask.Models.User;
+import com.example.BackendTask.models.User;
 import org.junit.Before;
 import org.junit.Test;
 

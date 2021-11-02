@@ -1,8 +1,8 @@
 package com.example.BackendTask;
 
-import com.example.BackendTask.Controllers.UserController;
-import com.example.BackendTask.Models.User;
-import com.example.BackendTask.Services.Interfaces.UserService;
+import com.example.BackendTask.controllers.UserController;
+import com.example.BackendTask.models.User;
+import com.example.BackendTask.services.UserService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -11,7 +11,6 @@ import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
-import org.springframework.test.web.client.match.ContentRequestMatchers;
 import org.springframework.test.web.servlet.MockMvc;
 
 import java.util.Arrays;

@@ -1,23 +1,16 @@
 package com.example.BackendTask;
 
-import com.example.BackendTask.Models.Order;
-import com.example.BackendTask.Models.User;
-import com.example.BackendTask.ModelsDTO.OrderDTO;
-import com.example.BackendTask.Repositories.OrderRepository;
-import com.example.BackendTask.Repositories.UserRepository;
-import com.example.BackendTask.Services.Implementations.OrderServiceImpl;
+import com.example.BackendTask.models.Order;
+import com.example.BackendTask.modelsDTO.OrderDTO;
+import com.example.BackendTask.repositories.OrderRepository;
+import com.example.BackendTask.repositories.UserRepository;
+import com.example.BackendTask.services.OrderService;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
-
-import java.util.Optional;
-
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertThat;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 
@@ -31,7 +24,7 @@ public class OrderServiceTest {
    UserRepository userRepository;
 
    @InjectMocks
-   OrderServiceImpl orderService;
+   OrderService orderService;
 
    @Test
    public void registerOrderShouldReturnNewOrderType(){
